@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>منصة العرب — تصفح المشاريع</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;800;900&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top" id="siteHeader"></header>
+
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <h1>سوق العمل الحر العربي، بدون تعقيد</h1>
+      <p>تصفح المشاريع، قدّم عرضك، وتواصل مباشرة مع العميل — بدون شروط توثيق مرهقة، وبعمولة منصة عادلة 5% فقط عند إتمام العمل.</p>
+    </div>
+    <div class="hero-stats" id="heroStats"></div>
+  </div>
+
+  <div class="status-tabs" id="statusTabs">
+    <button data-s="open" class="active">مفتوح</button>
+    <button data-s="ongoing">قيد التنفيذ</button>
+    <button data-s="completed">منتهي</button>
+  </div>
+
+  <div class="filters" id="catFilters">
+    <span class="chip active" data-c="all">كل الأقسام</span>
+  </div>
+
+  <div id="projectsGrid" class="grid">
+    <div class="empty">جارِ تحميل المشاريع...</div>
+  </div>
+</main>
+
+<footer id="siteFooter"></footer>
+
+<script type="module" src="js/index.js"></script>
+</body>
+</html>
