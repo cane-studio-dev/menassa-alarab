@@ -3,20 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>منصة العرب — لوحة تحكم الأدمن</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;800;900&family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>لوحة التحكم | المتجر الرقمي</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header class="top" id="siteHeader"></header>
+<body class="admin-body">
 
-<main class="wrap">
-  <div id="content"><div class="empty">جارِ التحميل...</div></div>
-</main>
+<div id="loginBox" class="login-box">
+  <h2>تسجيل دخول الأدمن</h2>
+  <input type="email" id="adminEmail" placeholder="البريد الإلكتروني">
+  <input type="password" id="adminPassword" placeholder="كلمة المرور">
+  <button id="loginBtn" class="btn btn-gold btn-block">دخول</button>
+  <p id="loginError" class="error-msg"></p>
+</div>
 
-<footer id="siteFooter"></footer>
+<div id="adminPanel" class="admin-panel" style="display:none">
+  <div class="container">
+    <div class="admin-header">
+      <h2>الطلبات الواردة</h2>
+      <button id="logoutBtn" class="btn btn-outline btn-sm">تسجيل الخروج</button>
+    </div>
+    <div class="table-wrap">
+      <table id="ordersTable">
+        <thead>
+          <tr>
+            <th>التاريخ</th>
+            <th>المنتج</th>
+            <th>الهاتف</th>
+            <th>الإيميل</th>
+            <th>تفاصيل التحويل</th>
+            <th>الحالة</th>
+            <th>إجراء</th>
+          </tr>
+        </thead>
+        <tbody id="ordersBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
-<script type="module" src="js/admin.js"></script>
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/admin.js"></script>
 </body>
 </html>
